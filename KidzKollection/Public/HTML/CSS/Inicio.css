@@ -1,0 +1,53 @@
+/*create the slideshow of products "ofertas" y "ropa de temporada"*/
+
+body,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Apply a background color and center the header */
+
+header {
+    background-color: #171b29;
+    text-align: left;
+    padding: 10px;
+}
+
+
+/* Style the navigation links */
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 0;
+    margin-right: 200px;
+}
+
+
+/* Style the active link */
+
+nav a.active {
+    background-color: #4400ff;
+    border-radius: 5px;
+    padding: 10px 5px;
+    white-space: nowrap;
+}
+
+
+/* Style the footer */
+
+footer {
+    background-color: #5681ac;
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* Style the text in the footer */
+
+footer p {
+    color: white;
+}
