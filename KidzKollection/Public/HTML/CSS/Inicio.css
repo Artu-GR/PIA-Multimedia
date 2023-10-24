@@ -10,7 +10,7 @@ ul {
 /* Apply a background color and center the header */
 
 header {
-    background-color: #171b29;
+    background-color: #ffffff;
     text-align: left;
     padding: 10px;
 }
@@ -20,7 +20,7 @@ header {
 
 nav a {
     text-decoration: none;
-    color: white;
+    color: rgb(245, 154, 198);
     font-weight: bold;
     padding: 0;
     margin-right: 200px;
@@ -30,7 +30,7 @@ nav a {
 /* Style the active link */
 
 nav a.active {
-    background-color: #4400ff;
+    background-color: #6b9bea;
     border-radius: 5px;
     padding: 10px 5px;
     white-space: nowrap;
