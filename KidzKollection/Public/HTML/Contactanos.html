@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Contactanos - Kidz Kollection</title>
+    <link rel="stylesheet" href="CSS/Contactanos.css" />
+    <style>
+        /* Agrega estilos CSS a tu gusto */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="Images/Contactanos.png" width=100% height="20%">
+        <nav>
+            <a href="Inicio.html">Inicio</a>
+            <a href="Nosotros.html">Conócenos</a>
+            <a href="Catalogo.html">Artículos</a>
+            <a href="BestSellers.html">Best-sellers</a>
+            <a href="#" class="active">Contactanos</a>
+            <a href="Carrito.html"><img src="Images/ShopingCart_Normal.png" width="30" height="30"></a>
+        </nav>
+    </header>
+    <h1>Contactanos</h1>
+    <div id="contact-form">
+        <form action="procesar_formulario.php" method="post">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="razon">Razón de Contacto:</label>
+                <select id="razon" name="razon" required>
+                    <option value="consulta">Consulta</option>
+                    <option value="comentarios">Comentarios</option>
+                    <option value="soporte">Soporte</option>
+                    <option value="otros">Otros</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="redes">Redes Sociales:</label>
+                <input type="text" id="redes" name="redes">
+                <p>Ejemplo: Facebook: https://www.facebook.com/kidzkollection</p>
+            </div>
+            <div class="form-group">
+                <label for="mapa">Ubicación:</label>
+                <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.9613644662414!2d-122.08366488469317!3d37.38605197983457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fbc727d4c6a13%3A0xd6c09e760cdd01f5!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1602658139374!5m2!1sen!2sus" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <p>Kidz Kollection. All rights reserved.</p>
+    </footer>
+</body>
+</html>
