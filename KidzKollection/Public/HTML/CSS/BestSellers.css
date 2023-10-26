@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Apply a background color and center the header */
+
+header {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+
+/* Style the navigation links */
+
+nav a {
+    text-decoration: none;
+    color: rgb(245, 154, 198);
+    font-weight: bold;
+    padding: 0;
+    margin-right: 100px;
+}
+
+
+/* Style the active link */
+
+nav a.active {
+    background-color: rgb(78, 12, 44);
+    border-radius: 10px;
+    padding: 10px 5px;
+    white-space: nowrap;
+}
+
+
+/* Style the footer */
+
+footer {
+    position: relative;
+    background-color: #5681ac;
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* Style the text in the footer */
+
+footer p {
+    color: white;
+}

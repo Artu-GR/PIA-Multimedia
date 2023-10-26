@@ -1,17 +1,18 @@
-/*create the slideshow of products "ofertas" y "ropa de temporada"*/
+/* Apply a background color and center the header */
 
-body,
-ul {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f7f7f7;
+    /* Set a background color for the body */
 }
-
-
-/* Apply a background color and center the header */
 
 header {
     background-color: #ffffff;
-    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 10px;
 }
 
@@ -23,26 +24,31 @@ nav a {
     color: rgb(245, 154, 198);
     font-weight: bold;
     padding: 0;
-    margin-right: 150px;
+    margin-right: 100px;
 }
 
 
 /* Style the active link */
 
 nav a.active {
-    background-color: #6b9bea;
-    border-radius: 5px;
+    background-color: rgb(78, 12, 44);
+    border-radius: 10px;
     padding: 10px 5px;
     white-space: nowrap;
 }
 
 
-/* Style the footer */
+/* Set the footer to a fixed position at the bottom */
 
 footer {
+    position: relative;
     background-color: #5681ac;
     text-align: center;
     padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    /* Make the footer stretch the full width of the viewport */
 }
 
 
@@ -50,4 +56,89 @@ footer {
 
 footer p {
     color: white;
+}
+
+
+/* Carousel Container */
+
+#animation-carousel {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    /* Set your desired max width */
+    margin: 0 auto;
+}
+
+
+/* Carousel Items */
+
+.carousel-item {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s;
+}
+
+.carousel-item.active {
+    display: block;
+    opacity: 1;
+}
+
+
+/* Carousel Controls */
+
+.carousel-prev-button,
+.carousel-next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.carousel-prev-button {
+    left: 0;
+}
+
+.carousel-next-button {
+    right: 0;
+}
+
+
+/* Style the navigation buttons */
+
+.carousel-prev-button:hover,
+.carousel-next-button:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+/* Move the Previous button to the left side */
+
+.carousel-prev-button {
+    position: absolute;
+    /*top: 50%;
+    /* Center vertically */
+    left: -100px;
+    /* Adjust the distance from the left edge */
+    transform: translateY(500%);
+    /* Center vertically */
+}
+
+
+/* Move the Next button to the right side */
+
+.carousel-next-button {
+    position: absolute;
+    top: 50%;
+    /* Center vertically */
+    right: -100px;
+    /* Adjust the distance from the right edge */
+    transform: translateY(500%);
+    /* Center vertically */
 }

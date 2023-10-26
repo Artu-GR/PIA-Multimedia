@@ -1,4 +1,5 @@
 /* Estilos generales */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f5f5f5;
@@ -7,10 +8,9 @@ body {
     text-align: center;
 }
 
-/* Estilos para el encabezado */
-
 
 /* Estilos para el contenido principal */
+
 h1 {
     color: #333;
     font-size: 32px;
@@ -28,3 +28,102 @@ p {
     line-height: 1.5;
 }
 
+
+/* Style the section containing the image and text */
+
+#about-us-section {
+    background-color: #fff;
+    /* Set a white background color */
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* Style the image */
+
+#about-us-section img {
+    max-width: 100%;
+    /* Ensure the image doesn't exceed its container */
+}
+
+
+/* Style the h1 for the "About Us" title */
+
+#about-us-section h1 {
+    color: #333;
+    font-size: 36px;
+    margin: 20px 0;
+}
+
+#agradecimiento p {
+    color: darkorchid;
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+/* Style the main text in the section */
+
+#about-us-section p {
+    color: #666;
+    font-size: 20px;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 800px;
+    /* Set a maximum width to control text width */
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Apply a background color and center the header */
+
+header {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+
+/* Style the navigation links */
+
+nav a {
+    text-decoration: none;
+    color: rgb(245, 154, 198);
+    font-weight: bold;
+    padding: 0;
+    margin-right: 100px;
+}
+
+
+/* Style the active link */
+
+nav a.active {
+    background-color: rgb(78, 12, 44);
+    border-radius: 10px;
+    padding: 10px 5px;
+    white-space: nowrap;
+}
+
+
+/* Style the footer */
+
+footer {
+    position: relative;
+    background-color: #5681ac;
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* Style the text in the footer */
+
+footer p {
+    color: white;
+}

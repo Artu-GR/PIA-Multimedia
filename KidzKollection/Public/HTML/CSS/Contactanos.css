@@ -1,7 +1,10 @@
 /* Estilos generales */
+
 header {
     background-color: #ffffff;
-    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 10px;
 }
 
@@ -10,10 +13,11 @@ nav a {
     color: rgb(245, 154, 198);
     font-weight: bold;
     padding: 0;
-    margin-right: 150px;
+    margin-right: 100px;
 }
+
 nav a.active {
-    background-color: #6b9bea;
+    background-color: rgb(78, 12, 44);
     border-radius: 5px;
     padding: 10px 5px;
     white-space: nowrap;
@@ -44,7 +48,9 @@ h1 {
     margin-bottom: 20px;
 }
 
+
 /* Estilos para etiquetas y campos de entrada */
+
 label {
     font-weight: bold;
     color: #333;
@@ -62,7 +68,9 @@ textarea {
     font-size: 16px;
 }
 
+
 /* Estilos para el botón de enviar */
+
 input[type="submit"] {
     background-color: #FF6347;
     color: #fff;
@@ -77,7 +85,9 @@ input[type="submit"]:hover {
     background-color: #FF4500;
 }
 
+
 /* Estilos para el mapa */
+
 #mapa {
     width: 100%;
     border: none;
@@ -85,7 +95,9 @@ input[type="submit"]:hover {
     border-radius: 5px;
 }
 
+
 /* Estilos para los enlaces a las redes sociales */
+
 #redes {
     width: 100%;
     padding: 10px;
@@ -94,13 +106,17 @@ input[type="submit"]:hover {
     font-size: 16px;
 }
 
+
 /* Estilo para los mensajes de ejemplo de las redes sociales */
-#redes + p {
+
+#redes+p {
     font-size: 14px;
     color: #888;
 }
 
+
 /* Estilo para el formulario de contacto en dispositivos móviles */
+
 @media (max-width: 768px) {
     input[type="text"],
     input[type="email"],
@@ -111,6 +127,7 @@ input[type="submit"]:hover {
 }
 
 footer {
+    position: relative;
     background-color: #5681ac;
     text-align: center;
     padding: 10px;
