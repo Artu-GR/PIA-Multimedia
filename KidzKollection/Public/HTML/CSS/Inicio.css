@@ -16,6 +16,11 @@ header {
     padding: 10px;
 }
 
+nav {
+    display: flex;
+    gap: 10px; /* Espacio entre elementos en el menú de navegación */
+}
+
 
 /* Style the navigation links */
 
@@ -142,3 +147,35 @@ footer p {
     transform: translateY(500%);
     /* Center vertically */
 }
+/* Estilo de Selector*/
+form {
+    text-align: center;
+}
+
+select {
+    margin-right: 100px;
+    border: none;
+    width: 150px;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: rgb(245, 154, 198);
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+}
+
+
+select:hover {
+    border: none;
+    background-color: rgb(152, 206, 232);
+}
+
+select:focus {
+    border: none;
+    background-color: rgb(255, 255, 255);
+}
+
+select option {
+    font-size: 16px;
+}
+

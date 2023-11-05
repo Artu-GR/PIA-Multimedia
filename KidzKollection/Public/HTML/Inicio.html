@@ -13,12 +13,29 @@
         <nav>
             <a href="#" class="active">Inicio</a>
             <a href="Nosotros.html">Conócenos</a>
-            <a href="Catalogo.html">Artículos</a>
+            <form>
+                <select id="Catalogo.html" onchange="redirectToPage(this)">
+                    <option value="" disabled selected>Articulos</option>
+                    <option value="Catalogo.html">Articulos</option>
+                    <option value="RopaNo.html">Ropa Niños</option>
+                    <option value="RopaNa.html">Ropa Niñas</option>
+                </select>
+            </form>
+            
+            </form>
             <a href="BestSellers.html">Best-sellers</a>
             <a href="Contactanos.html">Contactanos</a>
             <a href="Carrito.html"><img src="Images/ShopingCart_Normal.png" width="30" height="30"></a>
         </nav>
     </header>
+
+    <script>
+        function redirectToPage(select) {
+            var selectedOption = select.options[select.selectedIndex];
+            var pageUrl = selectedOption.value;
+            window.location.href = pageUrl;
+        }
+    </script>
 
     <!--Include the slidewhow of hot sale and season sales-->
 

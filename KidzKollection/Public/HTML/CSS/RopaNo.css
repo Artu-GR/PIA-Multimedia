@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Apply a background color and center the header */
+
+header {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    gap: 10px; /* Espacio entre elementos en el menú de navegación */
+}
+
+
+/* Style the navigation links */
+
+nav a {
+    text-decoration: none;
+    color: rgb(245, 154, 198);
+    font-weight: bold;
+    padding: 0;
+    margin-right: 100px;
+}
+
+
+/* Style the active link */
+
+nav a.active {
+    background-color: rgb(78, 12, 44);
+    border-radius: 10px;
+    padding: 10px 5px;
+    white-space: nowrap;
+}
+
+
+/* Estilos de los artículos en la lista */
+.articulo {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    width: 190px;
+    display: inline-block;
+    text-align: center;
+}
+
+
+.articulo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.nom-articulo{
+    font-weight: bold;
+    text-align: justify;
+    color: #000000;
+}
+
+.precio {
+    font-size: 14px;
+    text-align: left;
+    color: #333;
+}
+
+.descuento {
+    font-size: 14px;
+    text-align: left;
+    color: red;
+}
+
+.boton-agregar {
+    background-color: #3498db;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Estilo de Selector*/
+form {
+    text-align: center;
+}
+
+select {
+    margin-right: 100px;
+    border: none;
+    width: 150px;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: rgb(245, 154, 198);
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+}
+
+
+select:hover {
+    border: none;
+    background-color: rgb(152, 206, 232);
+}
+
+select:focus {
+    border: none;
+    background-color: rgb(255, 255, 255);
+}
+
+select option {
+    font-size: 16px;
+}
+
+
+
+
+/* Style the footer */
+
+footer {
+    position: relative;
+    background-color: #5681ac;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Style the text in the footer */
+
+footer p {
+    color: white;
+}

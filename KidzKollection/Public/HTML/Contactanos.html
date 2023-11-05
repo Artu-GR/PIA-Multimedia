@@ -29,16 +29,37 @@
         <nav>
             <a href="Inicio.html">Inicio</a>
             <a href="Nosotros.html">Conócenos</a>
-            <a href="Catalogo.html">Artículos</a>
+            <form>
+                <select id="Catalogo.html" onchange="redirectToPage(this)">
+                    <option value="" disabled selected>Articulos</option>
+                    <option value="Catalogo.html">Articulos</option>
+                    <option value="RopaNo.html">Ropa Niños</option>
+                    <option value="RopaNa.html">Ropa Niñas</option>
+                </select>
+            </form>
+            </form>
             <a href="BestSellers.html">Best-sellers</a>
             <a href="#" class="active">Contactanos</a>
             <a href="Carrito.html"><img src="Images/ShopingCart_Normal.png" width="30" height="30"></a>
         </nav>
     </header>
 
+    <script>
+        function redirectToPage(select) {
+            var selectedOption = select.options[select.selectedIndex];
+            var pageUrl = selectedOption.value;
+            window.location.href = pageUrl;
+        }
+    </script>
+
     <img src="Images/Contactanos.png" width=100% height="20%">
 
     <h1>Contactanos</h1>
+
+    <form action="procesar_formulario.php" method="post" onsubmit="return validarFormulario()">
+        <!-- Resto del contenido del formulario -->
+    </form>
+    
     <div id="contact-form">
         <form action="procesar_formulario.php" method="post">
             <div class="form-group">
@@ -81,6 +102,23 @@
     <footer>
         <p>Kidz Kollection. All rights reserved.</p>
     </footer>
+
+    <script>
+        function validarFormulario() {
+            var nombre = document.getElementById('nombre').value;
+            var email = document.getElementById('email').value;
+            var razon = document.getElementById('razon').value;
+            var mensaje = document.getElementById('mensaje').value;
+
+            if (nombre === '' || email === '' || razon === 'Seleccione una razón' || mensaje === '') {
+                alert('Por favor, complete todos los campos del formulario.');
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+
 </body>
 
 </html>

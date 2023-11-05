@@ -13,14 +13,98 @@
         <nav>
             <a href="Inicio.html">Inicio</a>
             <a href="Nosotros.html">Conócenos</a>
-            <a href="#" class="active">Artículos</a>
+            <form>
+                <select id="Catalogo.html" onchange="redirectToPage(this)">
+                    <option value="" disabled selected>Articulos</option>
+                    <option value="Catalogo.html">Articulos</option>
+                    <option value="RopaNo.html">Ropa Niños</option>
+                    <option value="RopaNa.html">Ropa Niñas</option>
+                </select>
+            </form>
             <a href="BestSellers.html">Best-sellers</a>
             <a href="Contactanos.html">Contactanos</a>
             <a href="Carrito.html"><img src="Images/ShopingCart_Normal.png" width="30" height="30"></a>
         </nav>
     </header>
 
-    <img src="Images/Articulos.png" width=100% height="20%">
+    <script>
+        function redirectToPage(select) {
+            var selectedOption = select.options[select.selectedIndex];
+            var pageUrl = selectedOption.value;
+            window.location.href = pageUrl;
+        }
+    </script>
+
+    <img src="Images/Articulos.png" width=100% height=20%>
+
+    <h1>Conjuntos</h1>
+
+    <div class="articulo">
+        <img src="Images/Articulo1.jpg" alt="Artículo 1">
+        <p class="precio">Precio: $25.99</p>
+        <p class="precioAnt">Precio: $25.99</p>
+        <p class="descuento">Descuento: 10%</p>
+        <button class="boton-agregar">Agregar al Carrito</button>
+    </div>
+
+    <div class="articulo">
+        <img src="Images/Articulo1.jpg" alt="Artículo 1">
+        <p class="precio">Precio: $25.99</p>
+        <p class="descuento">Descuento: 10%</p>
+        <button class="boton-agregar">Agregar al Carrito</button>
+    </div>
+    
+    <div class="articulo">
+        <img src="Images/Articulo1.jpg" alt="Artículo 1">
+        <p class="precio">Precio: $25.99</p>
+        <p class="descuento">Descuento: 10%</p>
+        <button class="boton-agregar">Agregar al Carrito</button>
+    </div>
+
+    <div class="articulo">
+        <img src="Images/Articulo1.jpg" alt="Artículo 1">
+        <p class="precio">Precio: $25.99</p>
+        <p class="descuento">Descuento: 10%</p>
+        <button class="boton-agregar">Agregar al Carrito</button>
+    </div>
+
+    <div class="articulo">
+        <img src="Images/Articulo1.jpg" alt="Artículo 1">
+        <p class="precio">Precio: $25.99</p>
+        <p class="descuento">Descuento: 10%</p>
+        <button class="boton-agregar">Agregar al Carrito</button>
+    </div>
+
+    <div class="articulo">
+        <img src="Images/Articulo1.jpg" alt="Artículo 1">
+        <p class="precio">Precio: $25.99</p>
+        <p class="descuento">Descuento: 10%</p>
+        <button class="boton-agregar">Agregar al Carrito</button>
+    </div>
+
+    <img src="Images/Articulos/Ban1.png" width=100% height="400">
+
+    <div class="articulo">
+        <img src="Images/Articulo1.jpg" alt="Artículo 1">
+        <p class="precio">Precio: $25.99</p>
+        <p class="descuento">Descuento: 10%</p>
+        <button class="boton-agregar">Agregar al Carrito</button>
+    </div>
+
+    <div class="articulo">
+        <img src="Images/Articulo1.jpg" alt="Artículo 1">
+        <p class="precio">Precio: $25.99</p>
+        <p class="descuento">Descuento: 10%</p>
+        <button class="boton-agregar">Agregar al Carrito</button>
+    </div>
+
+
+
+
+
+
+
+
 
     <footer>
         <p>Kidz Kollection. All rights reserved.</p>

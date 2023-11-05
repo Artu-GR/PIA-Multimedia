@@ -7,15 +7,18 @@ ul {
     padding: 0;
 }
 
-
 /* Apply a background color and center the header */
-
 header {
     background-color: #ffffff;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+}
+
+nav {
+    display: flex;
+    gap: 10px; /* Espacio entre elementos en el menú de navegación */
 }
 
 
@@ -40,6 +43,75 @@ nav a.active {
 }
 
 
+/* Estilos de los artículos en la lista */
+.articulo {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    width: 190px;
+    display: inline-block;
+    text-align: center;
+}
+
+.articulo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.precio {
+    font-weight: bold;
+    color: #333;
+}
+
+.descuento {
+    color: red;
+}
+
+.boton-agregar {
+    background-color: #3498db;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Estilo de Selector*/
+form {
+    text-align: center;
+}
+
+select {
+    margin-right: 100px;
+    border: none;
+    width: 150px;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: rgb(245, 154, 198);
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+}
+
+
+select:hover {
+    border: none;
+    background-color: rgb(152, 206, 232);
+}
+
+select:focus {
+    border: none;
+    background-color: rgb(255, 255, 255);
+}
+
+select option {
+    font-size: 16px;
+}
+
+
+
+
 /* Style the footer */
 
 footer {
@@ -48,7 +120,6 @@ footer {
     text-align: center;
     padding: 10px;
 }
-
 
 /* Style the text in the footer */
 
