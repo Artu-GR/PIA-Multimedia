@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Contactanos - Kidz Kollection</title>
+    <title>Contact Us - Kidz Kollection</title>
     <link rel="stylesheet" href="CSS/Contactanos.css" />
     <style>
         /* Agrega estilos CSS a tu gusto */
@@ -27,19 +27,19 @@
     <header>
         <img src="Images/Logo.png" width="120" height="120">
         <nav>
-            <a href="Inicio.html">Inicio</a>
-            <a href="Nosotros.html">Conócenos</a>
+            <a href="Inicio.html">Home</a>
+            <a href="Nosotros.html">About Us</a>
             <form>
                 <select id="Catalogo.html" onchange="redirectToPage(this)">
-                    <option value="" disabled selected>Articulos</option>
-                    <option value="Catalogo.html">Articulos</option>
-                    <option value="RopaNo.html">Ropa Niños</option>
-                    <option value="RopaNa.html">Ropa Niñas</option>
+                    <option value="" disabled selected>Articles</option>
+                    <option value="Catalogo.html">Articles</option>
+                    <option value="RopaNo.html">Boys Clothes</option>
+                    <option value="RopaNa.html">Girls Clothes</option>
                 </select>
             </form>
             </form>
             <a href="BestSellers.html">Best-sellers</a>
-            <a href="#" class="active">Contactanos</a>
+            <a href="#" class="active">Contact Us</a>
             <a href="Carrito.html"><img src="Images/ShopingCart_Normal.png" width="30" height="30"></a>
         </nav>
     </header>
@@ -54,7 +54,7 @@
 
     <img src="Images/Contactanos.png" width=100% height="20%">
 
-    <h1>Contactanos</h1>
+    <h1>Contact Us</h1>
 
     <form action="procesar_formulario.php" method="post" onsubmit="return validarFormulario()">
         <!-- Resto del contenido del formulario -->
@@ -63,33 +63,33 @@
     <div id="contact-form">
         <form action="procesar_formulario.php" method="post">
             <div class="form-group">
-                <label for="nombre">Nombre:</label>
+                <label for="nombre">Name:</label>
                 <input type="text" id="nombre" name="nombre" required>
             </div>
             <div class="form-group">
-                <label for="email">Correo Electrónico:</label>
+                <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
             </div>
             <div class="form-group">
-                <label for="razon">Razón de Contacto:</label>
+                <label for="razon">Contact Reason:</label>
                 <select id="razon" name="razon" required>
-                    <option value="consulta">Consulta</option>
-                    <option value="comentarios">Comentarios</option>
-                    <option value="soporte">Soporte</option>
-                    <option value="otros">Otros</option>
+                    <option value="consulta">Consult</option>
+                    <option value="comentarios">Commentaries</option>
+                    <option value="soporte">Support</option>
+                    <option value="otros">Others</option>
                 </select>
             </div>
             <div class="form-group">
-                <label for="mensaje">Mensaje:</label>
+                <label for="mensaje">Message:</label>
                 <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
             </div>
             <div class="form-group">
-                <label for="redes">Redes Sociales:</label>
+                <label for="redes">Social Networks:</label>
                 <input type="text" id="redes" name="redes">
-                <p>Ejemplo: Facebook: https://www.facebook.com/kidzkollection</p>
+                <p>Example: Facebook: https://www.facebook.com/kidzkollection</p>
             </div>
             <div class="form-group">
-                <label for="mapa">Ubicación:</label>
+                <label for="mapa">Location:</label>
                 <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.9613644662414!2d-122.08366488469317!3d37.38605197983457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fbc727d4c6a13%3A0xd6c09e760cdd01f5!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1602658139374!5m2!1sen!2sus"
                     width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
