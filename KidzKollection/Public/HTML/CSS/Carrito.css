@@ -20,8 +20,10 @@ header {
 
 nav {
     display: flex;
-    gap: 10px; /* Espacio entre elementos en el menú de navegación */
+    gap: 10px;
+    /* Espacio entre elementos en el menú de navegación */
 }
+
 
 /* Style the navigation links */
 
@@ -39,22 +41,24 @@ nav a {
 nav a.active {
     background-color: rgb(78, 12, 44);
     border-radius: 10px;
-    padding-top: 19px;
+    padding-top: 9px;
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 5px;
     white-space: nowrap;
 }
 
+
 /* Estilo de Selector*/
+
 form {
     text-align: center;
 }
 
 select {
-    margin-right: 100px;
+    margin-right: 50px;
     border: none;
-    width: 150px;
+    width: 100px;
     font-size: 16px;
     background-color: #ffffff;
     color: rgb(245, 154, 198);
@@ -62,7 +66,6 @@ select {
     outline: none;
     cursor: pointer;
 }
-
 
 select:hover {
     border: none;
@@ -77,8 +80,6 @@ select:focus {
 select option {
     font-size: 16px;
 }
-
-
 
 
 /* Style the footer */
