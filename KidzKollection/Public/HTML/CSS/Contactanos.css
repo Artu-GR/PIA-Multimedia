@@ -10,9 +10,9 @@ header {
 
 nav {
     display: flex;
-    gap: 10px; /* Espacio entre elementos en el menú de navegación */
+    gap: 10px;
+    /* Espacio entre elementos en el menú de navegación */
 }
-
 
 nav a {
     text-decoration: none;
@@ -132,7 +132,9 @@ input[type="submit"]:hover {
     }
 }
 
+
 /* Estilo de Selector*/
+
 form {
     text-align: center;
 }
@@ -148,7 +150,6 @@ select {
     outline: none;
     cursor: pointer;
 }
-
 
 select:hover {
     border: none;

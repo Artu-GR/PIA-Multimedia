@@ -36,19 +36,28 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if (shoppingCart && shoppingCart.length > 0) {
             // Generate rows for each item in the cart
-            shoppingCart.forEach(item => {
+            shoppingCart.forEach((item, index) => {
                 const row = document.createElement("tr");
                 row.innerHTML = `
                     <td>${item.name}</td>
                     <td>$${item.price.toFixed(2)}</td>
+                    <td><button class="remove-button" data-index=${index}>Drop item</button></td>
                 `;
                 cartItems.appendChild(row);
+
+                const removeButton = row.querySelector(".remove-button");
+                removeButton.addEventListener("click", function() {
+                    const itemIndex = parseInt(this.getAttribute("data-index"));
+                    shoppingCart.splice(itemIndex, 1); // Remove the item from the cart
+                    localStorage.setItem("shoppingCart", JSON.stringify(shoppingCart)); // Update local storage
+                    displayCart(); // Refresh the cart display
+                });
             });
         } else {
             // Handle the case when the cart is empty or does not exist
             const emptyRow = document.createElement("tr");
             emptyRow.innerHTML = `
-                <td colspan="3">Carrito vacío</td>
+                <td colspan="3">No items in cart</td>
             `;
             cartItems.appendChild(emptyRow);
         }
