@@ -85,7 +85,9 @@ select option {
 /* Style the footer */
 
 footer {
-    position: relative;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     background-color: #5681ac;
     text-align: center;
     padding: 10px;
@@ -96,4 +98,14 @@ footer {
 
 footer p {
     color: white;
+}
+
+.Articles {
+    margin-top: -400px;
+    margin-left: 800px;
+}
+
+#clearCart {
+    margin-top: -400px;
+    margin-left: 800px;
 }

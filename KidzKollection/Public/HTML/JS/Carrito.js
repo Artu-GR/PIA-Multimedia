@@ -35,6 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
         cartItems.innerHTML = ""; // Clear the table
 
         if (shoppingCart && shoppingCart.length > 0) {
+            let totalPrice = 0;
             // Generate rows for each item in the cart
             shoppingCart.forEach((item, index) => {
                 const row = document.createElement("tr");
@@ -44,6 +45,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     <td><button class="remove-button" data-index=${index}>Drop item</button></td>
                 `;
                 cartItems.appendChild(row);
+                totalPrice += item.price;
 
                 const removeButton = row.querySelector(".remove-button");
                 removeButton.addEventListener("click", function() {
@@ -53,6 +55,13 @@ document.addEventListener("DOMContentLoaded", function() {
                     displayCart(); // Refresh the cart display
                 });
             });
+
+            const row = document.createElement("tr");
+            row.innerHTML = `
+                <td>Total price</td>
+                <td>$${totalPrice.toFixed(2)}</td>
+            `;
+            cartItems.appendChild(row);
         } else {
             // Handle the case when the cart is empty or does not exist
             const emptyRow = document.createElement("tr");
