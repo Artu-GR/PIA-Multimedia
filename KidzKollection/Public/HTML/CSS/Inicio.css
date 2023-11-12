@@ -63,13 +63,12 @@ footer p {
     color: white;
 }
 
-
 /* Carousel Container */
 
 #animation-carousel {
     position: relative;
     width: 100%;
-    max-width: 800px;
+    max-width: 80%;
     /* Set your desired max width */
     margin: 0 auto;
 }

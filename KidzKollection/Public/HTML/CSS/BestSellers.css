@@ -43,6 +43,50 @@ nav a.active {
     white-space: nowrap;
 }
 
+/* Estilos de los artículos en la lista */
+.articulo {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    width: 13.4%;
+    display: inline-block;
+    text-align: center;
+}
+
+
+.articulo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.nom-articulo{
+    font-weight: bold;
+    text-align: justify;
+    color: #000000;
+}
+
+.precio {
+    font-size: 14px;
+    text-align: left;
+    color: #333;
+}
+
+.descuento {
+    font-size: 14px;
+    text-align: left;
+    color: red;
+}
+
+.boton-agregar {
+    background-color: #3498db;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
 /* Estilo de Selector*/
 form {
     text-align: center;
