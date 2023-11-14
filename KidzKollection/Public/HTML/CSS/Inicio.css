@@ -18,7 +18,8 @@ header {
 
 nav {
     display: flex;
-    gap: 10px; /* Espacio entre elementos en el menú de navegación */
+    gap: 10px;
+    /* Espacio entre elementos en el menú de navegación */
 }
 
 
@@ -47,13 +48,11 @@ nav a.active {
 
 footer {
     position: relative;
+    bottom: 0;
+    width: 100%;
     background-color: #5681ac;
     text-align: center;
     padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    /* Make the footer stretch the full width of the viewport */
 }
 
 
@@ -147,7 +146,10 @@ footer p {
     transform: translateY(500%);
     /* Center vertically */
 }
+
+
 /* Estilo de Selector*/
+
 form {
     text-align: center;
 }
@@ -164,7 +166,6 @@ select {
     cursor: pointer;
 }
 
-
 select:hover {
     border: none;
     background-color: rgb(152, 206, 232);
@@ -179,3 +180,71 @@ select option {
     font-size: 16px;
 }
 
+#line {
+    margin-top: 415px;
+    margin-bottom: 20px;
+    border-style: solid;
+    border-width: 1px;
+    color: #999;
+}
+
+#video-nosotros {
+    width: 50%;
+    /* Adjust the width as needed */
+}
+
+.video-section {
+    display: flex;
+    justify-content: space-around;
+    /* Adjust the spacing as needed */
+    align-items: center;
+    margin-top: 20px;
+    /* Adjust the top margin as needed */
+}
+
+.text-section {
+    flex: 1;
+    padding: 20px;
+}
+
+#beneficios {
+    text-align: center;
+    /* Center the content inside the div */
+    margin-top: 20px;
+    /* Add top margin as needed */
+}
+
+#beneficios h3 {
+    color: rgb(78, 12, 44);
+    /* Adjust the color as needed */
+}
+
+#beneficios ul {
+    list-style-type: none;
+    /* Remove default list styling */
+    padding: 0;
+    display: flex;
+    /* Use flex container */
+    justify-content: space-around;
+    /* Distribute items horizontally with space around */
+}
+
+#beneficios li {
+    text-align: center;
+    margin-bottom: 10px;
+    /* Adjust the margin between list items */
+    padding: 10px;
+    /* Add padding for better spacing */
+    border: 1px solid #999;
+    /* Add borders for better visibility */
+}
+
+.shipping {
+    list-style-type: none;
+    /* Remove default list styling */
+    padding: 0;
+    display: flex;
+    /* Use flex container */
+    justify-content: space-around;
+    /* Distribute items horizontally with space around */
+}

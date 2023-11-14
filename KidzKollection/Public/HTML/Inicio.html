@@ -58,6 +58,49 @@
         <button type="button" class="carousel-next-button"><img src="Images/NextButton.png" width="30px"></button>
     </div>
 
+    <hr id="line">
+
+    <div class="video-section">
+        <video id="video-nosotros" width="640" height="360" controls autoplay muted>
+            <source src="Images/Video/Nosotros.mp4" type="video/mp4">
+        </video>
+
+        <div class="text-section">
+            <h1><a href="Nosotros.html">Who are we?</a></h1>
+            <p>
+                Here at KidzKollection, we wish for the customer to feel listened and treated the best way possible. This is why our team is built upon that same philosophy; we've gathered the best of the best for you to feel the best.
+            </p>
+            <button><a href="Catalogo.html">Shop now!</a></button>
+        </div>
+    </div>
+
+    <hr>
+
+    <div id="beneficios">
+        <h3>Benefits of buying with us</h3>
+        <ul>
+            <li><a href="Nosotros.html">Safe shipping</a></li>
+            <li>Up to 2 years of warranty</li>
+            <li>Exclusive products and offers</li>
+            <li>Shopping made easy and safe</li>
+        </ul>
+    </div>
+
+    <hr>
+
+
+
+    <script>
+        document.getElementById("video-nosotros").addEventListener("click", function() {
+            var video = document.getElementById("video-nosotros");
+            if (video.muted) {
+                video.muted = false;
+            } else {
+                video.muted = true;
+            }
+        });
+    </script>
+
     <footer>
         <p>Kidz Kollection. All rights reserved.</p>
     </footer>
