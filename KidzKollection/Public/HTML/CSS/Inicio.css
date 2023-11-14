@@ -62,6 +62,7 @@ footer p {
     color: white;
 }
 
+
 /* Carousel Container */
 
 #animation-carousel {
@@ -180,7 +181,7 @@ select option {
 }
 
 #line {
-    margin-top: 415px;
+    margin-top: 550px;
     margin-bottom: 20px;
     border-style: solid;
     border-width: 1px;
