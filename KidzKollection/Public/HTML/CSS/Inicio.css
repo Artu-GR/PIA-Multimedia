@@ -248,3 +248,28 @@ select option {
     justify-content: space-around;
     /* Distribute items horizontally with space around */
 }
+
+.contenedor-sucursales {
+    display: flex;
+    justify-content: space-around;
+}
+
+.sucursal {
+    text-align: center;
+    max-width: 200px;
+    margin: 10px; /* Añadido un margen para separar las sucursales */
+}
+
+.sucursal img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.sucursal h2 {
+    margin-bottom: 10px;
+}
+
+.sucursal p {
+    margin: 5px 0;
+}
